@@ -12,6 +12,12 @@ body{
 
 
 
+.subtitle{
+    text-align:center;
+    color:#64748b;
+    margin-bottom:30px;
+    font-size:16px;
+}
 
 h1{
     text-align:center;
@@ -36,6 +42,38 @@ h1{
 #loadStudents:hover{
     background:#1d4ed8;
 }
+
+.list-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px 0 12px;
+}
+
+#studentCount{
+    background:#2563eb;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+#studentList{
+    max-height:320px;
+    overflow-y:auto;
+    margin-bottom:25px;
+    padding-right:6px;
+}
+
+h2{
+    margin-top:35px;
+    margin-bottom:20px;
+    color:#1f2937;
+}
+
+
+
 
 form{
     display:flex;
@@ -74,9 +112,26 @@ form button:hover{
 
 .student-card{
     background:white;
-    padding:18px;
-    margin-bottom:15px;
     border-radius:12px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    padding:15px 18px;
+    margin-bottom:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    border-left:6px solid #2563eb;
+    transition:transform 0.2s ease;
 }
 
+.student-card:hover{
+    transform:translateY(-3px);
+}
+
+.student-card h3{
+    margin:0 0 8px;
+    color:#2563eb;
+    font-size:20px;
+}
+
+.student-card p{
+    margin:4px 0;
+    color:#475569;
+    font-size:15px;
+}

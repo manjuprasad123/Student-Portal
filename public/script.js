@@ -10,7 +10,7 @@ loadStudents.addEventListener("click",async()=>{
   students.forEach((student)=>{
 
     studentList.innerHTML+=`
-      <div id="student-card>
+      <div class="student-card">
         <h3>${student.name}</h3>
         <p>Course:${student.course}</p>
         <p>Age:${student.age}</p>
