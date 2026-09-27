@@ -11,16 +11,45 @@
 </head>
 
 <body>
-  <h1>Student Portal</h1>
+  <div class="container">
+    <h1>Student Portal</h1>
 
-  <button class="loadStudents">
-    Load Students
-  </button>
+    <button id="loadStudents">
+      Load Students
+    </button>
 
-  <div class="studentList">
-    
+    <div id="studentList">
+
+    </div>
+
+    <h2>Add New Student</h2>
+
+    <form id="studentsForm">
+
+      <input
+          type="text"
+          id="name"
+          placeholder="Student Name"
+      >
+
+      <input
+          type="text"
+          id="course"
+          placeholder="Course"
+      >
+
+      <input
+          type="number"
+          id="age"
+          placeholder="Age"
+      >
+
+      <button type="submit">
+          Add Student
+      </button>
+    </form>
+
   </div>
-
 
   <script src="/script.js"></script>
 </body>
