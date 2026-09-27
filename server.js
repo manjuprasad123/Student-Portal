@@ -83,6 +83,12 @@ const server=http.createServer((request,response)=>{
     });
 
   }
+  else if(request.method==="DELETE"  && request.url.startsWith("/api/students/"))
+  {
+
+
+
+  }
   else
   {
 
