@@ -33,7 +33,7 @@ const server=http.createServer((request,response)=>{
       path.join(__dirname,"public","script.js"),"utf8"
     );
 
-    response.setHeader("Content-Type","application/json");
+    response.setHeader("Content-Type","application/javascript");
     response.end(script);
 
   }
@@ -69,8 +69,8 @@ const server=http.createServer((request,response)=>{
       students.push(newStudent);
 
       fs.writeFileSync(
-        path.join(__dirname,students.json),
-        JSON.stringify("students",null,2)
+        path.join(__dirname,"students.json"),
+        JSON.stringify(students,null,2)
       );
 
       response.setHeader("Content-Type","application/json");
@@ -79,7 +79,7 @@ const server=http.createServer((request,response)=>{
         success:true,
         message:"Uploaded Successfully"
       }))
-      
+
     });
 
   }

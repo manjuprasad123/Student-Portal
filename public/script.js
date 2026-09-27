@@ -27,18 +27,19 @@ loadStudents.addEventListener("click",async()=>{
 })
 
 form.addEventListener("submit",async (e)=>{
+  
   e.preventDefault();
 
   const data={
     id:Date.now(),
     name:nameIn.value,
-    course:courseIn,value,
+    course:courseIn.value,
     age:Number(ageIn.value)
   };
 
   const response=await fetch("/api/students",{
     method:"POST",
-    header:{
+    headers:{
       "Content-Type":"application/json"
     },
     body:JSON.stringify(data)
@@ -48,7 +49,7 @@ form.addEventListener("submit",async (e)=>{
   
   if(result.success){
     form.reset();
-    
+    loadStudents.click();
   }
 
 })
