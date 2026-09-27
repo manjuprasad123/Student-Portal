@@ -30,6 +30,14 @@ form.addEventListener("submit",async (e)=>{
   
   e.preventDefault();
 
+  if(nameIn.value.trim()==="" ||
+    courseIn.value.trim()==="" ||
+    ageIn.value.trim()===""
+  ){
+    alert("Fill the details in the form");
+    return;
+  }
+
   const data={
     id:Date.now(),
     name:nameIn.value,
