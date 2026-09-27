@@ -80,11 +80,3 @@ form button:hover{
     box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
 
-.student-card h3{
-    margin:0 0 10px;
-    color:#2563eb;
-}
-
-.student-card p{
-    margin:5px 0;
-}
