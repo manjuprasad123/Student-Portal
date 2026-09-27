@@ -12,12 +12,12 @@ body{
 
 
 
+
 h1{
     text-align:center;
     color:#2563eb;
     margin-bottom:5px;
 }
-
 
 #loadStudents{
     display:block;
@@ -68,6 +68,9 @@ form button{
 form button:hover{
     background:#15803d;
 }
+
+
+
 
 .student-card{
     background:white;

@@ -6,7 +6,7 @@ const server=http.createServer((request,response)=>{
 
   if(request.url==="/"){
     const html=fs.readFileSync(
-      path.join(__dirname,"public","index.html")
+      path.join(__dirname,"public","index.html"),"utf8"
     );
 
     response.setHeader("Content-Type","text/html");
@@ -15,7 +15,7 @@ const server=http.createServer((request,response)=>{
   else if(request.url==="/style.css")
   {
     const css=fs.readFileSync(
-      path.join(__dirname,"public","style.css")
+      path.join(__dirname,"public","style.css"),"utf8"
     );
 
     response.setHeader("Content-Type","text/css");
@@ -24,11 +24,19 @@ const server=http.createServer((request,response)=>{
   else if(request.url==="/script.js")
   {
       const script=fs.readFileSync(
-      path.join(__dirname,"public","script.js")
+      path.join(__dirname,"public","script.js"),"utf8"
     );
 
     response.setHeader("Content-Type","application/json");
     response.end(script);
+  }
+  else if(request.method==="GET" && request.url==="/api/students"){
+    const data=fs.readFileSync(
+      path.join(__dirname,"students.json"),"utf8"
+    );
+
+    response.setHeader("Content-Type","application/json");
+    response.end(data);
   }
   else
   {
