@@ -44,5 +44,11 @@ form.addEventListener("submit",async (e)=>{
     body:JSON.stringify(data)
   })
 
-  console.log(response);
+  const result=await response.json();
+  
+  if(result.success){
+    form.reset();
+    
+  }
+
 })

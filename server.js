@@ -48,7 +48,41 @@ const server=http.createServer((request,response)=>{
     response.end(data);
 
   }
- 
+   else if(request.method==="POST" && request.url==="/api/students")
+  {
+
+    let body="";
+
+    request.on("data",(chunk)=>{
+      body+=chunk;
+    });
+
+    request.on("end",()=>{
+      const newStudent= JSON.parse(body);
+
+      const students=JSON.parse(
+        fs.readFileSync(
+         path.join(__dirname,"students.json"),"utf8"
+        )
+      );
+
+      students.push(newStudent);
+
+      fs.writeFileSync(
+        path.join(__dirname,students.json),
+        JSON.stringify("students",null,2)
+      );
+
+      response.setHeader("Content-Type","application/json");
+
+      response.end(JSON.stringify({
+        success:true,
+        message:"Uploaded Successfully"
+      }))
+      
+    });
+
+  }
   else
   {
 
