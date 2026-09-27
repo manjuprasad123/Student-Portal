@@ -1,6 +1,11 @@
 const loadStudents=document.getElementById("loadStudents");
 const studentList=document.getElementById("studentList");
 
+const form=document.getElementById("studentsForm");
+const nameIn=document.getElementById("name");
+const courseIn=document.getElementById("course");
+const ageIn=document.getElementById("age");
+
 loadStudents.addEventListener("click",async()=>{
   const response=await fetch("/api/students");
   const students=await response.json();
@@ -19,4 +24,25 @@ loadStudents.addEventListener("click",async()=>{
     
   })
 
+})
+
+form.addEventListener("submit",async (e)=>{
+  e.preventDefault();
+
+  const data={
+    id:Date.now(),
+    name:nameIn.value,
+    course:courseIn,value,
+    age:Number(ageIn.value)
+  };
+
+  const response=await fetch("/api/students",{
+    method:"POST",
+    header:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(data)
+  })
+
+  console.log(response);
 })
