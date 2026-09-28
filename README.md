@@ -42,7 +42,7 @@ Student-Portal/
 
 ## 📸 Project Preview
 
-![Uploading image.png…]()
+<img width="1743" height="828" alt="image" src="https://github.com/user-attachments/assets/ee8775c5-0f5b-4062-8a50-f8e4f13d6481" />
 
 
 * Home Page
