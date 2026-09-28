@@ -85,8 +85,28 @@ const server=http.createServer((request,response)=>{
   }
   else if(request.method==="DELETE"  && request.url.startsWith("/api/students/"))
   {
+    const id=Number(request.url.split("/").pop());
 
+    const students=JSON.parse(
+      fs.readFileSync(
+        path.join(__dirname,"students.json"),"utf8"
+      )
+    );
 
+    const updateStudents=students.filter((student)=>{
+      return student.id!==id;
+    })
+
+    fs.writeFileSync(
+      "students.json",JSON.stringify(uploadStudents,null,2)
+    );
+
+    response.setHeader("Content-Type","application/json");
+
+    response.end(JSON.stringify({
+      success:true,
+      message:"Successfully deleted"
+    }))
 
   }
   else
