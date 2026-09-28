@@ -98,7 +98,7 @@ const server=http.createServer((request,response)=>{
     })
 
     fs.writeFileSync(
-      "students.json",JSON.stringify(uploadStudents,null,2)
+      "students.json",JSON.stringify(updateStudents,null,2)
     );
 
     response.setHeader("Content-Type","application/json");
