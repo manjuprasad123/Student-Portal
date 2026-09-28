@@ -42,7 +42,8 @@ Student-Portal/
 
 ## 📸 Project Preview
 
-> Add screenshots of your project here after uploading them to GitHub.
+![Uploading image.png…]()
+
 
 * Home Page
 * Student List
@@ -56,7 +57,7 @@ Student-Portal/
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/manjuprasad123/Student-Portal.git>
 ```
 
 ### 2. Open the project folder
