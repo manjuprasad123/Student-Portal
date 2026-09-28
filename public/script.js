@@ -9,6 +9,8 @@ const ageIn=document.getElementById("age");
 const studentCount=document.getElementById("studentCount");
 let i=0;
 
+
+
 loadStudents.addEventListener("click",async()=>{
   const response=await fetch("/api/students");
   const students=await response.json();
@@ -75,6 +77,7 @@ form.addEventListener("submit",async (e)=>{
   }
 
 })
+
 
 
 

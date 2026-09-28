@@ -85,6 +85,7 @@ const server=http.createServer((request,response)=>{
   }
   else if(request.method==="DELETE"  && request.url.startsWith("/api/students/"))
   {
+
     const id=Number(request.url.split("/").pop());
 
     const students=JSON.parse(
@@ -119,6 +120,9 @@ const server=http.createServer((request,response)=>{
   }
 })
 
+
 server.listen(5000,()=>{
+
   console.log("server was running in:localhost:5000");
+
 })
