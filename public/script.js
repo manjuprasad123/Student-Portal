@@ -84,12 +84,12 @@ async function deleteStudent(id){
     method:"DELETE"
   })
 
-  const student=await response.json();
+  const result=await response.json();
 
   i--;
   studentCount.innerText=i;
 
-  if(response.success){
+  if(result.success){
     loadStudents.click();
   }
 
