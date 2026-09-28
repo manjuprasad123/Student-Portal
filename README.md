@@ -1,36 +1,53 @@
-# 🎓 Student Portal — Node.js Backend Mini Project
+# 🎓 Student Portal — Node.js CRUD Web Application
 
-A beginner-friendly full-stack Student Portal built using **Node.js (Core Modules)**, **HTML**, **CSS**, and **JavaScript**. This project demonstrates how to build a backend without Express.js by creating REST APIs using Node's built-in `http` module.
+A simple **Student Portal** web application built using **Node.js, HTML, CSS, and JavaScript**. This project demonstrates CRUD (Create, Read, Delete) operations without using Express.js or a database. Student data is stored in a JSON file and served through custom Node.js APIs.
+
+🌐 **Live Demo:** https://student-portal-3t2f.onrender.com
 
 ---
 
-## 🚀 Features
+## 📸 Project Preview
 
-* 📋 Load all students from the backend.
-* ➕ Add new students using a web form.
-* ❌ Delete students permanently.
-* 💾 Store student data in `students.json`.
-* ✅ Form validation to prevent empty submissions.
-* 🔄 Automatically refresh the student list after adding or deleting.
+<img width="1688" height="816" alt="image" src="https://github.com/user-attachments/assets/fbe4790e-0a3e-4ea0-a7f5-9cafa84b2549" />
+
+---
+
+## ✨ Features
+
+* 📚 View all students from the backend.
+* ➕ Add a new student using a form.
+* ❌ Delete a student instantly.
+* ✅ Client-side input validation.
+* 🎨 Responsive and clean UI using CSS.
+* 🌐 Custom REST APIs built with Node.js `http` module.
+* ☁️ Deployed online using Render.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Backend:** Node.js (`http`, `fs`, `path`)
-* **Frontend:** HTML5, CSS3, JavaScript
-* **Database:** JSON File (`students.json`)
+| Technology       | Purpose                      |
+| ---------------- | ---------------------------- |
+| HTML5            | Page structure               |
+| CSS3             | Styling and responsive UI    |
+| JavaScript (ES6) | Frontend logic and Fetch API |
+| Node.js          | Backend HTTP server          |
+| JSON             | Student data storage         |
+| Git & GitHub     | Version control              |
+| Render           | Cloud deployment             |
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 Student-Portal/
+│
 ├── public/
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
+│
 ├── students.json
 ├── server.js
 ├── package.json
@@ -40,67 +57,67 @@ Student-Portal/
 
 ---
 
-## 📸 Project Preview
+## ⚙️ API Endpoints
 
-<img width="1743" height="828" alt="image" src="https://github.com/user-attachments/assets/ee8775c5-0f5b-4062-8a50-f8e4f13d6481" />
-
-
-* Home Page
-* Student List
-* Add Student Form
-* Delete Student Feature
+| Method | Endpoint            | Description        |
+| ------ | ------------------- | ------------------ |
+| GET    | `/api/students`     | Fetch all students |
+| POST   | `/api/students`     | Add a new student  |
+| DELETE | `/api/students/:id` | Delete a student   |
 
 ---
 
-## ⚙️ How to Run the Project
+## 🚀 Getting Started
 
-### 1. Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
-git clone <https://github.com/manjuprasad123/Student-Portal.git>
+git clone https://github.com/manjuprasad123/Student-Portal.git
 ```
 
-### 2. Open the project folder
+### 2️⃣ Navigate into the Project
 
 ```bash
 cd Student-Portal
 ```
 
-### 3. Start the server
+### 3️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 4️⃣ Run the Server
 
 ```bash
 node server.js
 ```
 
-### 4. Open in your browser
+### 5️⃣ Open in Browser
 
-```text
+```
 http://localhost:5000
 ```
 
 ---
 
-## 📚 What I Learned
+## 🧠 What I Learned
 
-This project helped me learn:
+Through this project I learned:
 
-* Creating a web server using Node.js.
-* Serving HTML, CSS, and JavaScript files.
-* Building GET, POST, and DELETE APIs.
-* Handling HTTP requests and responses.
-* Using `fetch()` to communicate between frontend and backend.
-* Reading and writing JSON files using the `fs` module.
-* Form validation and dynamic UI updates.
+* Creating an HTTP server using Node.js.
+* Serving HTML, CSS, and JavaScript files from a backend.
+* Building REST APIs with GET, POST, and DELETE requests.
+* Using the Fetch API to communicate with the backend.
+* Reading and writing JSON files using Node.js `fs` module.
+* Deploying a Node.js application on Render.
+* Managing a project using Git and GitHub.
 
 ---
 
-## 🎯 Future Improvements
+## 🌍 Live Demo
 
-* ✏️ Edit/Update student details.
-* 🔍 Search students by name.
-* 📊 Display total student count dynamically.
-* 🎨 Improve UI with animations and notifications.
-* 🗄️ Replace `students.json` with MongoDB in the future.
+**Render Deployment:** https://student-portal-3t2f.onrender.com
 
 ---
 
@@ -108,6 +125,12 @@ This project helped me learn:
 
 **Manju Prasad**
 
-Computer Science Engineering Student passionate about Backend and Full Stack Web Development.
+Computer Science Engineering Student | Aspiring Full Stack Developer
 
-⭐ If you like this project, consider giving it a star on GitHub!
+* GitHub: https://github.com/manjuprasad123
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
