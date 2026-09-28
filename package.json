@@ -1,0 +1,22 @@
+{
+  "name": "student-portal",
+  "version": "1.0.0",
+  "description": "A beginner-friendly full-stack Student Portal built using **Node.js (Core Modules)**, **HTML**, **CSS**, and **JavaScript**. This project demonstrates how to build a backend without Express.js by creating REST APIs using Node's built-in `http` module.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manjuprasad123/Student-Portal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/manjuprasad123/Student-Portal/issues"
+  },
+  "homepage": "https://github.com/manjuprasad123/Student-Portal#readme"
+}
