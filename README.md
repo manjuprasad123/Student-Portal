@@ -8,7 +8,7 @@ A simple **Student Portal** web application built using **Node.js, HTML, CSS, an
 
 ## 📸 Project Preview
 
-<img width="1688" height="816" alt="image" src="https://github.com/user-attachments/assets/fbe4790e-0a3e-4ea0-a7f5-9cafa84b2549" />
+<img width="1772" height="871" alt="image" src="https://github.com/user-attachments/assets/ee332ec6-cdeb-430f-a078-93cba3b86308" />
 
 ---
 
